@@ -1,0 +1,31 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main () {
+    int n, i;
+    double fact = 1;
+    printf ("Enter an integer:");
+
+    scanf ("%d", &n);
+
+    // shows error if the user enters a negative integer
+    if (n < 0) {
+        printf ("Error ! Factorial of a negative number doesn't exist.");
+    }
+	else {
+	    for (i = 1; i <= n; ++i) {
+	        fact *= i;
+        }
+	    printf ("Factorial of %d = %lf", n, fact);
+	}
+
+    return 0;
+    
+}

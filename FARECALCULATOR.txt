@@ -1,0 +1,61 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+#include <math.h>
+
+int main ()
+{
+    int t,f;
+    char v;
+    printf("Enter:\n c/C for car, \n b/B for bus, \n t/T for tempo:\n");
+    scanf("%c", &v);
+    if (v == 'c' || v == 'C' || v == 'B' || v == 'b' || v == 't' || v == 'T') {
+        printf("Enter the time");
+        scanf("%d", &t);
+    }
+    switch(v) {
+        case 'c' :
+        case 'C' :
+        if(t<=2) {
+            f=20*t;
+            printf("The fare is:%d",f);
+        }
+        else {
+            f=40+30*(t-2);
+            printf("The fare is:%d",f);
+        }
+    break;
+        case 'b' :
+        case 'B' :
+        if(t<=4) {
+            f=40*t;
+            printf("The fare is:%d",f);
+        }
+        else {
+            f=80+50*(t-2);
+            printf("The fare is:%d",f);
+        }
+    break;
+        case 't' :
+        case 'T' :
+            if(t<=3) {
+            f=30*t;
+                printf("The fare is:%d",f);
+            }
+            else {
+                f=60+40*(t-3);
+                printf("The fare is:%d",f);
+            }
+        break;
+    default:
+    printf("Wrong input");
+    }
+return 0;
+}
+
