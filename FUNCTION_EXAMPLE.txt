@@ -1,0 +1,51 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int firstNumber = 1;
+int secondNumber = 2;
+int total;
+
+int doCredit(int fromAccount, int ToAccount, double amount) {
+    //do some login
+}
+
+int doDebit(int fromAccount, int ToAccount, double amount) {
+    //do some login
+}
+
+int getBalace(int fromAccount) {
+    //do some login to get the balance
+}
+
+int[] getStatment (int fromAccount, Date fromDate, Date toDate) {
+    //do some logic to get the statement
+}
+
+int addWithNoParamters() {
+    total = firstNumber + secondNumber;
+}
+
+int addWithParameters(int i, int j) {
+    return i + j;
+}
+
+int main(void) {
+    addWithNoParamters();
+    printf("Total from function without parameters : %d ", total);
+    
+    int stnumber, ndnumber;
+    printf("\nEnter 2 numbers to add");
+    scanf("%d %d", &stnumber, &ndnumber); 
+    
+    int sum = addWithParameters(stnumber, ndnumber);
+    printf("\nTotal from funtion having parameters : %d ", sum);
+    
+    return 0;
+}
